@@ -89,6 +89,11 @@ p + p {
     font-size: 0.75rem;
 }
 
+#siga {
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
 #instagram {
     background-image: url(./imgs/instagram.png);
     height: 50px;
