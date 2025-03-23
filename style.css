@@ -6,12 +6,12 @@
 }
 
 :root {
+    --alignment-default: center;
     --background-color: rgb(90, 90, 120);
-    --color-white: #ffffff;
     --color-black: #000000;
     --color-gray: gray;
+    --color-white: #ffffff;
     --font-default: "Montserrat", sans-serif;
-    --alignment-default: center;
 }
 
 body {
@@ -29,18 +29,18 @@ body {
 
 #form {
     display: flex;
+    align-items: var(--alignment-default);
+    flex-direction: column;
     gap: 1rem;
     padding: 2rem;
-    flex-direction: column;
-    align-items: var(--alignment-default);
 }
 
 #redes {
     display: flex;
-    gap: 1rem;
-    padding: 2rem;
     flex-direction: row;
+    gap: 1rem;
     justify-content: var(--alignment-default);
+    padding: 2rem;
 }
 
 label {
@@ -49,14 +49,14 @@ label {
 }
 
 button {
-    margin-top: 1rem;
-    padding: 0.75rem 2rem;
-    border-radius: 10px;
     background-color: var(--color-white);
+    border: 2px solid var(--color-white);
+    border-radius: 10px;
     color: var(--color-black);
+    margin-top: 1rem;
     font-size: 1rem;
     font-weight: bold;
-    border: 2px solid var(--color-white);
+    padding: 0.75rem 2rem;
 }
 
 button:hover {
@@ -64,15 +64,13 @@ button:hover {
 }
 
 .inputs {
-    font-size: 2rem;
+    background-color: var(--color-gray);
+    border: 1px dashed var(--color-white);
     border-radius: 10px;
+    font-family: var(--font-default);
     font-size: 2rem;
     padding: 0.5rem;
     text-align: var(--alignment-default);
-    font-family: var(--font-default);
-    border: 1px dashed var(--color-white);
-    background-color: var(--color-gray);
-    width: 90%;
 }
 
 .inputs:focus {
@@ -88,24 +86,30 @@ p {
 
 #instagram {
     background-image: url(./imgs/instagram.png);
-    width: 50px;
     height: 50px;
+    width: 50px;
 }
 
 #instagram:hover {
     background-image: url(./imgs/instagram-white.png);
-    width: 50px;
     height: 50px;
+    width: 50px;
 }
 
 #youtube {
     background-image: url(./imgs/youtube.png);
-    width: 50px;
     height: 50px;
+    width: 50px;
 }
 
 #youtube:hover {
     background-image: url(./imgs/youtube-white.png);
-    width: 50px;
     height: 50px;
+    width: 50px;
+}
+
+@media screen and (max-width: 400px) {
+    .inputs {
+        width: 90%;
+    }
 }
