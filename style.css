@@ -49,11 +49,12 @@ button {
     margin-top: 2rem;
     padding: 0.75rem 2rem;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px black; */
     background-color: white;
     color: black;
     font-size: 1rem;
     font-weight: bold;
+    border: 2px solid white;
 }
 
 button:hover {
@@ -67,9 +68,9 @@ button:hover {
     padding: 0.5rem;
     text-align: center;
     font-family: var(--font-default);
-    border: 0;
+    border: 2px solid white;
     background-color: gray;
-    box-shadow: 5px 5px 5px black;
+    /* box-shadow: 5px 5px 5px black; */
 }
 
 .inputs:focus {
@@ -80,4 +81,29 @@ p {
     font-style: italic;
     font-weight: bold;
     font-size: 1.5rem;
+    text-shadow: 2px 2px 3px black;
+}
+
+#instagram {
+    background-image: url(./instagram.png);
+    width: 50px;
+    height: 50px;
+}
+
+#instagram:hover {
+    background-image: url(./instagram-white.png);
+    width: 50px;
+    height: 50px;
+}
+
+#youtube {
+    background-image: url(./youtube.png);
+    width: 50px;
+    height: 50px;
+}
+
+#youtube:hover {
+    background-image: url(./youtube-white.png);
+    width: 50px;
+    height: 50px;
 }
