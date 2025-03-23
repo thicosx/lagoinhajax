@@ -84,6 +84,11 @@ p {
     text-shadow: 2px 2px 3px var(--color-black);
 }
 
+p + p {
+    margin: 0.5rem;
+    font-size: 0.75rem;
+}
+
 #instagram {
     background-image: url(./imgs/instagram.png);
     height: 50px;
@@ -108,7 +113,7 @@ p {
     width: 50px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 520px) {
     .inputs {
         width: 90%;
     }
