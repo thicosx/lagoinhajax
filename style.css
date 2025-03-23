@@ -6,7 +6,7 @@
 }
 
 :root {
-    --background-color: rgb(78, 78, 159);
+    --background-color: rgb(106, 106, 113);
     --color-white: #ffffff;
     --font-default: "Montserrat", sans-serif;
 }
@@ -15,12 +15,13 @@ body {
     background-color: var(--background-color);
     color: var(--color-white);
     font-family: var(--font-default);
+    text-align: center;
 }
 
-h1 {
+.logo {
     padding: 2rem;
     text-align: center;
-    font-size: 2.5rem;
+    width: 30%;
 }
 
 #form {
@@ -49,14 +50,14 @@ button {
     padding: 0.75rem 2rem;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
-    background-color: gray;
+    background-color: white;
     color: black;
     font-size: 1rem;
     font-weight: bold;
 }
 
 button:hover {
-    background-color: white;
+    background-color: gray;
 }
 
 .inputs {
@@ -67,5 +68,16 @@ button:hover {
     text-align: center;
     font-family: var(--font-default);
     border: 0;
+    background-color: gray;
     box-shadow: 5px 5px 5px black;
+}
+
+.inputs:focus {
+    background-color: #ffffff;
+}
+
+p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
